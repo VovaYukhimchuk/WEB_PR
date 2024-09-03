@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Таблиці та форми</h1>
+    <h2>Таблиці</h2>
+    <table border="1">
+        <caption>Статистика продажу автомобілів</caption>
+    <thead> 
+        <tr>
+            <td rowspan="2">Марка автомобіля</td>
+            <td colspan="3">1-квартал</td>
+        </tr>
+        <tr>
+            <td>Січень</td>
+            <td>Лютий</td>
+            <td>Березень</td>
+        </tr>
+    </thead>
+    <tbody> 
+        <tr>
+            <td>Toyota</td>
+            <td>270 000</td>
+            <td>250 000</td>
+            <td>300 000</td>
+        </tr>
+        <tr>
+            <td>Volkswagen</td>
+            <td>250 000</td>
+            <td>200 000</td>
+            <td>270 000</td>
+        </tr>
+        <tr>
+            <td>Renault-Nissan</td>
+            <td>130 000</td>
+            <td>150 000</td>
+            <td>200 000</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td>ВСЬОГО:</td>
+            <td>650 000</td>
+            <td>600 000</td>
+            <td>770 000</td>
+        </tr>
+    </tfoot>    
+    </table>
+    <hr>
+    <table border="1">
+        <caption>Розклад занять</caption>
+    <thead>
+        <tr>
+            <td rowspan="2">День тижня</td>
+            <td rowspan="2">Академічні години</td>
+            <td colspan="3">ШИФР ГРУПИ</td>
+        </tr>
+        <tr>
+            <td>КН-2.01</td>
+            <td>КН-2.02</td>
+            <td>КН-2.03</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td rowspan="5">понеділок</td>
+        </tr>
+        <tr>
+            <td>8.00-9.20</td>
+            <td colspan="3">Веб-технології та веб-дизайн</td>
+        </tr>
+        <tr>
+            <td>9.35-10.55</td>
+            <td>Об'єктно-орієнтоване програмування</td>
+            <td>Комп'ютерна дискретна математика</td>
+            <td>Теорія алгоритмів</td>
+        </tr>
+        <tr>
+            <td>11.10-12.30</td>
+            <td colspan="3">Теорія алгоритмів</td>
+        </tr>
+        <tr>
+            <td>12.45-14.05</td>
+            <td>Комп'ютерна дискретна математика</td>
+            <td>Теорія алгоритмів</td>
+            <td>Об'єктно-орієнтоване програмування</td>
+        </tr>
+    </tbody>
+    </table>
+    <hr>
+    <h2>Форми</h2>
+    <form action="login" method="post">
+            <div>
+                <label>Логін:</label>
+                <input type="text" required>
+            </div>
+            <div>
+                <label>Пароль:</label>
+                <input type="password" required>
+            </div>
+            <div>
+                <a href="forgot_password">Забули пароль?</a>
+            </div>
+            <div>
+                <input type="submit" value="Увійти">
+            </div>
+    </form>
+    <hr>
+    <form action="login" method="post">
+        <div>
+            <label>Ім'я:</label>
+            <input type="text" required>
+        </div>
+        <div>
+            <label>Мейл:</label>
+            <input type="email" placeholder="example@mail.com" required>
+        </div>
+        <div>
+            <label>Номер телефону:</label>
+            <input type="tel" value="+380" required>
+        </div>
+        <div>
+            <input type="submit" value="Увійти">
+        </div>
+    </form>
+    <hr>
+    <form action="login" method="post">
+        <div>
+            <input type="text" placeholder="Ваше ім'я" required><br>
+            <input type="email" placeholder="Ваша e-mail" required><br>
+            <input type="tel" placeholder="Ваш телефон" required><br>
+            <input type="password" placeholder="Пароль" required><br>
+            <input type="password" placeholder="Підтвердження паролю" required>
+        </div>
+        <div>
+            <input type="submit" value="Реєстрація">
+        </div>
+    </form>
+    <hr>
+    <form action="report" method="post">
+        <div>
+            <label>Назва помилки:</label><br>
+            <input type="text" name="error-name" required>
+        </div>
+        <div>
+            <label>Опис:</label><br>
+            <textarea rows="4" required></textarea>
+        </div>
+        <div>
+            <label>Операційна система:</label><br>
+            <select name="operating-system" required>
+                <option value="Windows">Windows</option>
+                <option value="macOS">macOS</option>
+                <option value="Linux">Linux</option>
+            </select>
+        </div>
+        <div>
+            <label>Браузер:</label><br>
+            <input type="radio" value="chrome" required> Chrome<br>
+            <input type="radio" value="firefox"> Firefox<br>
+            <input type="radio" value="safari"> Safari
+        </div>
+        <div>
+            <label>Кому призначено:</label><br>
+            <select name="assigned-to" required>
+                <option value="dev">Команда розробки</option>
+                <option value="test">Команда тестування</option>
+                <option value="manag">Менеджер проекту</option>
+            </select>
+        </div>
+        <div>
+            <label>Приорітет:</label><br>
+            <select name="priority" required>
+                <option value="low">Низький</option>
+                <option value="medium">Середній</option>
+                <option value="high">Високий</option>
+            </select>
+        </div>
+        <div>
+            <label>Скриншот:</label><br>
+            <input type="file">
+        </div>
+        <div>
+            <label>Статус:</label><br>
+            <select name="status" required>
+                <option value="new">Новий</option>
+                <option value="in-progress">В процесі</option>
+                <option value="resolved">Вирішено</option>
+            </select>
+        </div>
+        <div>
+            <button type="submit">Надіслати</button>
+        </div>
+    </form>
+</body>
+</html>
