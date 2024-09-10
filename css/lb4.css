@@ -1,0 +1,69 @@
+body {
+    background-image: url('../images/bg_page.png');
+    background-repeat: repeat-y;
+    background-size: contain;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#content {
+    margin: 0;
+    padding: 0 150px;
+    box-sizing: border-box;
+    background-color: #FEFEFE;
+
+}
+
+#banner img {
+    width: 100%;
+    height: 250px;
+}
+
+#help {
+    color: #b97a46;
+}
+
+h1 {
+    font-family: 'Baskerville', 'Palatino Linotype', 'Times', serif;
+    font-size: 24px;
+    color: #b8860b;
+    margin-bottom: 20px;
+}
+
+p {
+    font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #757574;
+}
+
+p.advice {
+    background-color: #faf4c2;
+    border: 1px dashed #b18006;
+    padding: 10px;
+    margin: 20px 0;
+    color: #3a3900;
+}
+
+p.advice strong {
+    color: #9c290d;
+    font-weight: bold;
+}
+
+h2 {
+    font-family: 'Baskerville', 'Palatino Linotype', 'Times', serif;
+    font-size: 20px;
+    color: #ac7e0c;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-family: 'Baskerville', 'Palatino Linotype', 'Times', serif;
+    font-size: 18px;
+    color: #b4860f;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
